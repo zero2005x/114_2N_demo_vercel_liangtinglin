@@ -6,7 +6,13 @@ import {
   BlogLocalJsonPage_14,
   BlogNodePage_14,
   BookListPage_14,
+  BlogSupaPage_14,
 } from "./page";
+
+import {
+  T11_ErrorExamplePage_14,
+  T12_UseStateBasicPage_14,
+} from "./page/tutorials";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +38,28 @@ const router = createBrowserRouter([
       {
         path: "booklist_14",
         element: <BookListPage_14></BookListPage_14>,
+      },
+      {
+        path: "supa_14",
+        element: <BlogSupaPage_14></BlogSupaPage_14>,
+      },
+    ],
+  },
+  {
+    path: "/tutorials",
+    element: <HomeLayoutPage_14 />,
+    children: [
+      {
+        path: "HomePage_14",
+        element: <HomePage_14 />,
+      },
+      {
+        path: "T11_14",
+        element: <T11_ErrorExamplePage_14 />,
+      },
+      {
+        path: "T12_14",
+        element: <T12_UseStateBasicPage_14 />,
       },
     ],
   },

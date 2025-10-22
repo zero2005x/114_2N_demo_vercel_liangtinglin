@@ -1,10 +1,10 @@
 import { FaGlobe } from "react-icons/fa";
 import { FaMugSaucer } from "react-icons/fa6";
-
+import Wrapper from "../assets/wrappers/BlogsWrapper_14";
 import Blog_14 from "../components/Blog_14";
 import { useState, useEffect } from "react";
 
-const api_url = "http://localhost:3000/api/blogs_14";
+const api_url = "http://localhost:5000/api/blogs_14";
 
 const BlogNodePage_14 = () => {
   const [name, setName] = useState("liangtinglin");
@@ -28,28 +28,30 @@ const BlogNodePage_14 = () => {
 
   return (
     <>
-      <section className="blogs">
-        <div className="section-title">
-          <h2>
-            Blog from Node Page -- {name}, {id}
-          </h2>
-        </div>
-        <div className="blogs-center">
-          {blogs_14.map((item) => {
-            const { id, img, category, title, desc } = item;
-            return (
-              <Blog_14
-                key={id}
-                id={id}
-                img={img}
-                category={category}
-                title={title}
-                desc={desc}
-              />
-            );
-          })}
-        </div>
-      </section>
+      <Wrapper>
+        <section className="blogs">
+          <div className="section-title">
+            <h2>
+              Blog from Node Page -- {name}, {id}
+            </h2>
+          </div>
+          <div className="blogs-center">
+            {blogs_14.map((item) => {
+              const { id, img, category, title, desc } = item;
+              return (
+                <Blog_14
+                  key={id}
+                  id={id}
+                  img={img}
+                  category={category}
+                  title={title}
+                  desc={desc}
+                />
+              );
+            })}
+          </div>
+        </section>
+      </Wrapper>
     </>
   );
 };
