@@ -11,12 +11,17 @@ const BlogSupaPage_14 = () => {
   const [blogs_14, setBlogs_14] = useState([]);
 
   const fetchBlogFromSupabasePage = async () => {
-    let { data, error } = await supabase.from("blog_14").select("*");
-    console.log("data:", data);
-    if (error) {
-      throw error;
+    try {
+      let { data, error } = await supabase.from("blog_14").select("*");
+      console.log("data:", data);
+      if (error) {
+        console.error("Supabase error:", error);
+        return;
+      }
+      setBlogs_14(data || []);
+    } catch (error) {
+      console.error("fetchBlogFromSupabasePage error:", error);
     }
-    setBlogs_14(data);
   };
 
   useEffect(() => {

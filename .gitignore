@@ -7,6 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# server_blogs_14
+server_blogs_14
+
 # Dependencies
 node_modules
 package-lock.json

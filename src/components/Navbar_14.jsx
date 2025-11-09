@@ -129,6 +129,9 @@ const Navbar_14 = () => {
                     <li className="menu-item">
                       <Link to="/supa_14">W5-BlogSupa_14</Link>
                     </li>
+                    <li className="menu-item">
+                      <Link to="/localjson2_14">W7-BlogLocalJson2_14</Link>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -145,6 +148,33 @@ const Navbar_14 = () => {
                       <Link to="/tutorials/t12_14">
                         T12_UseStateBasicPage_14
                       </Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/tutorials/t21_14">
+                        T21_UseEffectCodeExamplePage_14
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="menu-item dropdown">
+                <Link to="#">Quiz1 +</Link>
+                <div className="sub-menu-wrapper slideInUp">
+                  <ul className="sub-menu">
+                    <li className="menu-item">
+                      <Link to="/quiz1">Quiz1_HomePage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/quiz1/static_14">TourStatic_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/quiz1/static2_14">TourStatic2_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/quiz1/static3_14">TourStatic3_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/quiz1/node_14">TourNode_14</Link>
                     </li>
                   </ul>
                 </div>
