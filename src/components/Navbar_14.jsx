@@ -179,6 +179,28 @@ const Navbar_14 = () => {
                   </ul>
                 </div>
               </li>
+              <li className="menu-item dropdown">
+                <Link to="#">Midterm +</Link>
+                <div className="sub-menu-wrapper slideInUp">
+                  <ul className="sub-menu">
+                    <li className="menu-item">
+                      <Link to="/midterm">Midterm_HomePage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p1_14">P1_StaticPage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p2_14">P2_StaticPage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p3_14">P3_NodePage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p4_14">P4_SupaPage_14</Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
               <li className="menu-item">
                 <Link to="#">Blog</Link>
               </li>
@@ -321,6 +343,28 @@ const Navbar_14 = () => {
                     </li>
                     <li className="menu-item">
                       <Link to="#">Tutorial 3</Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="menu-item dropdown">
+                <Link to="#">Midterm +</Link>
+                <div className="sub-menu-wrapper">
+                  <ul className="sub-menu">
+                    <li className="menu-item">
+                      <Link to="/midterm">Midterm_HomePage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p1_14">P1_StaticPage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p2_14">P2_StaticPage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p3_14">P3_NodePage_14</Link>
+                    </li>
+                    <li className="menu-item">
+                      <Link to="/midterm/p4_14">P4_SupaPage_14</Link>
                     </li>
                   </ul>
                 </div>

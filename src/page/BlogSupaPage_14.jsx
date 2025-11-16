@@ -1,6 +1,6 @@
 import { FaGlobe } from "react-icons/fa";
 import { FaMugSaucer } from "react-icons/fa6";
-import supabase from "../db/clientSupabase";
+import { supabase } from "../db/clientSupabase";
 import Blog_14 from "../components/Blog_14";
 import { useState, useEffect } from "react";
 import Wrapper from "../assets/wrappers/BlogsWrapper_14";
